@@ -1,0 +1,538 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* 공통 CSS 모바일 */
+#wrap {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.875rem;
+  margin-left: 2%;
+  margin-bottom: 19px;
+  color: #fff;
+}
+
+.title span {
+  font-weight: 700;
+  color: #c30d24;
+}
+
+/* Header */
+header {
+  height: 16px;
+  padding-top: 19px;
+  position: relative;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  vertical-align: middle;
+  width: 60%;
+}
+
+header .gnb {
+  float: right;
+  line-height: 3.5;
+  width: 100%;
+  background-color: #c30d24;
+  color: #e4e5e6;
+  position: absolute;
+  left: 0;
+  top: 380%;
+  z-index: 999;
+  display: none;
+}
+
+header .gnb li {
+  border-bottom: 1px solid #090f18;
+}
+
+header .gnb li:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #090f18;
+}
+
+header .hamburger_btn {
+  line-height: 1.5;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.875rem;
+  float: right;
+}
+
+/* Slider */
+.slider {
+  /* width: 100%; */
+  margin-bottom: 56px;
+  margin-top: 54px;
+  /* height: 232px;
+  background-image: url(../KIA_Tigers_Image_Resources/slide/kia_player_slideImg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+.slide_gallery li img{
+  width: 100%;
+}
+
+/* Content1 */
+.content1 {
+  background-color: #090f18;
+}
+
+.content1 p:nth-child(2) {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 550;
+  color: #fff;
+}
+
+.content1 .cards div {
+  margin-top: 45px;
+  background-color: #e4e5e6;
+}
+
+.content1 .cards img {
+  margin-top: 20px;
+}
+
+.content1 .cards div h3 {
+  margin: 19px 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.content1 .cards div p {
+  margin: 0 12px;
+  font-weight: 550;
+  line-height: 1.75;
+}
+
+/* line1 */
+.line1 {
+  margin-top: 114px;
+  margin-bottom: 132px;
+}
+
+/* Products */
+.products {
+  background-color: #090f18;
+}
+
+.products .title {
+  padding-top: 5px;
+  margin-bottom: 81px;
+}
+
+.products .proudctsContainer div h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.products .proudctsContainer div span {
+  font-size: 0.6875rem;
+  color: #fff;
+}
+
+.products .proudctsContainer a {
+  text-align: left;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.products img {
+  width: 100%;
+}
+
+.products .proudctsContainer div {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  z-index: 200;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.products .proudctsContainer a:hover div {
+  opacity: 1;
+  transform: translateY(30px);
+}
+
+.products .proudctsContainer a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #c30d24;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.products .proudctsContainer a:hover::before {
+  opacity: 0.7;
+}
+
+/* line2 */
+.line2 {
+  background-color: #090f18;
+  width: 20px;
+  height: 1px;
+  margin: 120px auto;
+}
+
+/* Notice */
+.notice {
+  background-color: #090f18;
+}
+
+.notice .title {
+  padding-top: 5px;
+  margin-bottom: 81px;
+}
+
+.notice .noticeContainer h4 {
+  color: #c30d24;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.notice .noticeContainer p {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 550;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.notice .noticeContainer img {
+  width: 100%;
+}
+
+/* line3 */
+.line3 {
+  margin: 120px 0;
+}
+
+.line3 img {
+  width: 256px;
+}
+
+/* Contact */
+.contact_section {
+  margin-top: 100px;
+  background-color: #090f18;
+}
+
+.contact_section .title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+input,
+textarea {
+  border-bottom: 1px solid #757575;
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  color: #3f51b5;
+}
+
+/* Input Form */
+.form_box .form input {
+  padding-bottom: 14px;
+  margin-bottom: 40px;
+}
+
+/* Textarea Form */
+.form_box .txta textarea {
+  height: 170px;
+}
+
+/* Button */
+.form_box .send_btn {
+  margin-top: 36px;
+  text-align: right;
+}
+
+.form_box .send_btn button {
+  font-size: 0.75rem;
+  color: #fff;
+  background: #c30d24;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* FAQ */
+.faq {
+  background-color: #090f18;
+}
+
+.faq .faq_content {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 162px;
+  background-color: #e4e5e6;
+  margin-bottom: 34px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 15px;
+}
+
+.faq .faq_content img {
+  padding: 10px;
+  padding-right: 0;
+  float: left;
+}
+
+.faq .faq_content .txt {
+  width: 70%;
+  float: right;
+  margin-bottom: 20px;
+}
+.faq .faq_content h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.faq .faq_content p {
+  font-weight: 550;
+  font-size: 0.975rem;
+}
+.faq button {
+  width: 150px;
+  height: 80px;
+  background-color: #c30d24;
+  color: #e4e5e6;
+}
+
+.faq .button {
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  margin-top: 100px;
+}
+
+footer iframe {
+  width: 100%;
+  height: 320px;
+}
+
+footer p {
+  margin: 20px 0;
+  color: #000;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+footer span {
+  font-weight: 600;
+}
+
+/* 테블릿 768px 이상 */
+@media screen and (min-width: 768px) {
+
+  /* Header */
+  header .logo img {
+    width: 75%;
+  }
+
+  header .gnb {
+    line-height: 3.5;
+    width: auto;
+    background: none;
+    color: #000;
+    position: static;
+    display: block !important;
+    float: right;
+  }
+
+  header .gnb li {
+    margin-left: 20px;
+    float: left;
+    display: inline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    border-bottom: none;
+  }
+
+  header .gnb li:hover {
+    cursor: inherit;
+    color: inherit;
+    background: transparent;
+  }
+
+  header .gnb a:hover {
+    color: #fff;
+    background: #c30d24;
+  }
+
+  header .hamburger_btn {
+    display: none;
+  }
+
+  /* Slider */
+  .slider {
+    /* height: 421px; */
+    margin-bottom: 84px;
+    margin-top: 84px;
+  }
+
+  /* Content1 */
+  .content1 .title {
+    margin-bottom: 36px;
+  }
+
+  .content1 .cards div {
+    height: 242px;
+    width: 23.5%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .content1 .cards div:last-of-type {
+    margin-right: 0;
+  }
+
+  /* Products */
+  .products .proudctsContainer a {
+    width: 50%;
+    float: left;
+  }
+
+  /* Notice */
+  .notice .title {
+    margin-bottom: 96px;
+  }
+
+  .notice .noticeContainer {
+    text-align: left;
+  }
+
+  .notice .noticeContainer div {
+    width: 32%;
+    float: left;
+  }
+
+  .notice .noticeContainer div:nth-of-type(2) {
+    margin: 0 2%;
+  }
+
+  /* FAQ */
+  .faq h3 {
+    padding-top: 10px;
+    margin-bottom: 123px;
+  }
+
+  .faq .faq_content:nth-of-type(1) {
+    width: 45%;
+    margin-right: 10%;
+    float: left;
+  }
+
+  .faq .faq_content:nth-of-type(2) {
+    width: 45%;
+    float: right;
+  }
+}
+
+/* PC 1132px 이상 */
+@media screen and (min-width: 1132px) {
+
+  /* Header */
+  header .logo img {
+    width: 100%;
+  }
+
+  /* Slider */
+  .slider {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 104px;
+  }
+
+  /* Content1 */
+  .content1 .title {
+    text-align: left;
+    float: left;
+  }
+
+  .content1 p:nth-child(2) {
+    width: 40%;
+    text-align: left;
+    float: right;
+  }
+
+  .content1 .cards {
+    clear: both;
+  }
+
+  /* Products */
+  .products .title {
+    text-align: left;
+    margin-bottom: 81px;
+  }
+
+  .products .proudctsContainer a {
+    width: 25%;
+    float: left;
+  }
+
+  /* Notice */
+  .notice .title {
+    width: 20%;
+    float: left;
+  }
+
+  .notice .noticeContainer {
+    width: 60%;
+    text-align: left;
+    float: right;
+  }
+
+   /* FAQ */
+   .faq h3 {
+    width: 30%;
+    text-align: left;
+    float: left;
+  }
+
+  .faq .faq_content:nth-of-type(1) {
+    width: 33%;
+    margin-right: 1%;
+    float: left;
+  }
+
+  .faq .faq_content:nth-of-type(2) {
+    width: 33%;
+    float: right;
+  }
+  
+}

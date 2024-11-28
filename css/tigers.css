@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+#wrap {
+    width: 100%;
+    text-align: center;
+}
+
+/* Safe Area */
+/* 정확히 1132px */
+/* 고정형 */
+/* 플롯만 사용 */
+.w1132 {
+    width: 1132px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding-top: 31px;
+}
+
+header .logo {
+    float: left;
+    vertical-align: text-bottom;
+}
+
+header ul {
+    float: right;
+    width: 556px;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 550;
+    margin-left: 30px;
+}
+
+header ul li:first-of-type {
+    margin-left: 0;
+}
+
+header ul li:last-of-type {
+    margin-right: 0;
+}
+
+/* Slider */
+.slider {
+    height: 520px;
+    background-image: url(../KIA_Tigers_Image_Resources/slide/kia_player_slideImg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contents */
+.we {
+    height: 330px;
+    margin-top: 104px;
+    background-color: #090F18;
+}
+
+.we h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 550;
+    float: left;
+}
+
+.we .w1132>p {
+    color: #fff;
+    text-align: left;
+    line-height: 29px;
+    float: right;
+}
+
+.we h2 span {
+    color: #C30D24;
+    font-weight: 550;
+}
+
+.we .cards {
+    clear: both;
+}
+
+/* cards */
+.we .cards div {
+    width: 268px;
+    height: 160px;
+    background-color: #E4E5E6;
+    float: left;
+    margin-top: 112px;
+    margin-right: 20px;
+}
+
+.we .cards div:nth-of-type(4) {
+    margin-right: 0;
+}
+
+.we .cards div h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.we .cards div p {
+    font-weight: 550;
+    font-size: 14px;
+    margin-top: 13px;
+    line-height: 22px;
+}
+
+/* Line texture1 */
+.line1 {
+    margin-top: 113px;
+    margin-bottom: 76px;
+}
+
+/* Products */
+.products {
+    height: 831px;
+    background-color: #090F18;
+    margin-bottom: 120px;
+}
+
+.products h3 {
+    text-align: left;
+    font-size: 33px;
+    font-weight: 550;
+    color: #fff;
+}
+
+.products h3 span {
+    font-weight: 550;
+    color: #C30D24;
+}
+
+.products .proudctsContainer {
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 78px;
+}
+
+.products .proudctsContainer img {
+    width: 360px;
+    height: 360px;
+    float: left;
+}
+
+/* Line texture1 */
+.line2 {
+    margin: 0 auto;
+    width: 20px;
+    height: 1px;
+    color: #000;
+    margin-bottom: 120px;
+}
+
+/* Notice */
+.notice {
+    height: 354px;
+    background-color: #090F18;
+    color: #fff;
+}
+.notice h3{
+    font-weight: 550;
+    font-size: 33px;
+    text-align: left;
+    float: left;
+}
+.notice .noticeContainer{
+    width: 865px;
+    float: right;
+}
+.notice>div::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.notice .noticeContainer div{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.notice .noticeContainer div h4 {
+    font-weight: 550;
+    color: #C30D24;
+    margin: 10px 0;
+}
+.notice .noticeContainer div p {
+    font-weight: 550;
+    line-height: 25px;
+}
+
+/* Line texturer3 */
+.line3{
+    margin-top: 31px;
+    margin-bottom: 13px;
+}
+
+.line3 img {
+    width: 286px;
+    height: 152px;
+}
+
+/* FAQ */
+.faq{
+    height: 282px;
+    background-color: #090F18;
+    margin-bottom: 181px;
+}
+.faq .w1132::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.faq h3 {
+    width: 268px;
+    text-align: left;
+    font-size: 33px;
+    font-weight: 550;
+    color: #fff;
+    float: left;
+}
+.faq .faq_content{
+    width: 412px;
+    height: 160px;
+    background-color: #E4E5E6;
+    margin-left: 20px;
+    float: left;
+}
+.faq button {
+    width: 124px;
+    height: 43px;
+    background-color: #C30D24;
+    color: #fff;
+    margin-top: 79px;
+    float: right;
+}
+
+.faq .faq_content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.faq .faq_content img{
+    margin: 17px;
+    float: left;
+}
+.faq .faq_content h4{
+    margin: 17px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #000;
+    float: left;
+}
+.faq .faq_content p{
+    width: 302px;
+    font-weight: 550;
+    font-size: 20px;
+    color: #000;
+    float: right;
+}
+
+/* map */
+.map{
+    height: 420px;
+    background-color: #E4E5E6;
+}
+
+/* footer */
+footer{
+    margin-top: 37px;
+}
